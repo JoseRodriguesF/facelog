@@ -24,7 +24,7 @@
     display: block;
 }
 
-#botao_conclusao,#botao_exclusao{
+#botao_conclusao,#botao_fotos{
     
     background-color: #ffffff;
     color: rgb(0, 0, 0);
@@ -87,11 +87,15 @@ button:hover {
     display: flex;
     justify-content: space-between;
     gap: 1rem; /* Diminui o espaço entre as colunas */
-    margin-top: 2vh; /* Espaçamento entre as linhas */
+    margin-top: 3vh; /* Espaçamento entre as linhas */
 }
 
 /* Ajusta a largura das colunas */
 .coluna {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column; /* Empilha os itens verticalmente */
+    gap: 10px; /* Espaço entre os itens dentro da coluna */
     flex: 1 1 auto; /* Permite que as colunas ajustem seu tamanho de forma proporcional */
     width: auto; /* Pode ajustar a largura automática das colunas */
 }
@@ -114,13 +118,14 @@ button:hover {
 }
 /* Estilização dos botões */
 .botoes {
-    display: flex;
-    justify-content: flex-end;
-    gap: 2vw;
+   
+    gap: 1vw;
+    margin-top: -22%;
+    
     
 }
 #coluna2{
-    margin-left: -23vw;
+    
 }
 #coluna_1{
     margin-left: vw;
@@ -130,6 +135,7 @@ button:hover {
     border-radius: 10px;
     padding: 2%;
     resize: vertical
+
 }
 #descricao{
     margin-top: 2%;
@@ -139,3 +145,21 @@ button:hover {
 #titulo{
     width: 20vw;
 }
+#codigoIdentificacao{
+    margin-top: ;
+    resize: vertical;
+}
+
+#prioridade{
+    
+   
+}
+.coluna3{
+    display: flex;
+    flex-direction: column;
+    margin-left: 75%;
+    margin-top: -32%;
+    
+
+}
+

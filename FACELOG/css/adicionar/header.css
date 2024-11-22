@@ -3,6 +3,7 @@
     background-color: #ffffff;
     margin: 0;
     padding: 0;
+    
 }
 
 body {
@@ -12,6 +13,7 @@ body {
 }
 
 header {
+    font-family: arvo;
     display: flex;
     flex-direction: row;
     justify-content: space-between; /* Para os itens ficarem distribuídos */

@@ -70,7 +70,8 @@
                         <select class="campos" id="status" name="status" required>
                             <option value="pendente" class="campos">Pendente</option>
                             <option value="resolvido"class="campos">Resolvido</option>
-                            <option value="em_andamento"class="campos">Em Andamento</option>
+                            
+
                         </select>
                     </div>
                 </div>
@@ -82,44 +83,40 @@
                 
                 <div class="relatorio-linha">
                     <div class="coluna">
-                        
-                        <label for="codigoIdentificacao"><strong>Código de Identificação:</strong></label><br>
-                        <!-- Campo de entrada, que será preenchido dinamicamente no backend com Java -->
-                        <input type="text" id="codigoIdentificacao" name="codigoIdentificacao" required placeholder="Código de identificação" value="{{codigoIdentificacao}}"><br>
-                         
-                        
-                        <label class="campos" for="setor"><strong>Setor:</strong></label><br>
+                        <!-- Código de Identificação -->
+                        <p id="codigoIdentificacao"><strong>Código de Identificação:</strong><br> ${id.relatorio}</p>
+                    
+                        <!-- Setor -->
+                        <label for="setor"><strong>Setor:</strong></label><br>
                         <select class="campos" id="setor" name="setor" required>
-                            <option class="campos"value="Segurança da Informação">Segurança da Informação</option>
-                            <option class="campos"value="Engenharia de Software">Engenharia de Software </option>
-                            <option class="campos" value="Analise de Dados e IA">Analise de Dados e IA  </option>
-                            <option class="campos" value="Inteface Web">Inteface Web</option>
-                        </select>
-
-                    <div class="coluna" id="coluna2">
-                        <label  for="inicioIncidente"><strong>Início do Incidente:</strong></label><br>
-                        <input class="campos" type="date" id="inicioIncidente" name="inicioIncidente" required>
-
-
-
-
-
-
-
-                        <label class="campos" for="urgencia"><strong>Prioridade:</strong></label><br>
-                        <select class="campos" id="urgencia" name="urgencia" required>
-                            <option class="campos"value="alta">Alta</option>
-                            <option class="campos"value="media">Média</option>
-                            <option class="campos" value="baixa">Baixa</option>
-
-
+                            <option class="campos" value="Segurança da Informação">Segurança da Informação</option>
+                            <option class="campos" value="Engenharia de Software">Engenharia de Software</option>
+                            <option class="campos" value="Analise de Dados e IA">Análise de Dados e IA</option>
+                            <option class="campos" value="Inteface Web">Interface Web</option>
                         </select>
                     </div>
-                </div>
                 
+                    <!-- Segunda coluna (Início do Incidente e Prioridade) -->
+                    <div class="coluna">
+                        <div class="campo">
+                            <label for="inicioIncidente"><strong>Início do Incidente:</strong></label><br>
+                            <input class="campos" type="date" id="inicioIncidente" name="inicioIncidente" required>
+                        </div>
+                
+                        <div class="campo">
+                            <label id="prioridade.txt" for="prioridade"><strong>Prioridade:</strong></label><br>
+                            <select class="campos" id="prioridade" name="prioridade" required>
+                                <option class="campos" value="alta">Alta</option>
+                                <option class="campos" value="media">Média</option>
+                                <option class="campos" value="baixa">Baixa</option>
+                            </select>
+                        </div>
+                    </div>
                 <!-- Botão para enviar os dados -->
                 <div class="botoes">
                     <button type="submit" id="botao_conclusao">Adicionar Relatório</button>
+                    <button type="submit" id="botao_fotos">Adicionar Fotos</button>
+
                 </div>
             </div>
         </section>
