@@ -1,0 +1,89 @@
+* {
+    text-decoration: none;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0; /* Remove margens do body */
+    width: 100%;
+    height: auto;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Para os itens ficarem distribuídos */
+    align-items: center; /* Para alinhar os itens verticalmente */
+    top: 0; /* Alinha no topo da página */
+    left: 0; /* Alinha no lado esquerdo */
+    width: auto; /* Garante que o header ocupe toda a largura da página */
+    height: 5vh; /* Ajuste a altura conforme necessário */
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 0px rgba(0, 0, 0, 0.265); /* Sombra suave apenas na parte de baixo */ /* Sombra suave na parte de baixo */
+    z-index: 1000; /* Garante que o header fique acima de outros elementos */
+    padding: 10px 20px; /* Ajuste o padding para o conteúdo */
+    position: relative;  /* Ou fixed, dependendo do seu layout */
+    z-index: 10;         /* Um valor maior garante que o header fique acima */
+}
+
+.logo {
+    
+    /* Estilos para o logo, se necessário */
+    display: flex;
+    flex-direction: row;
+    color: white; /* Cor do texto */
+    -webkit-text-stroke: 2px #1877F2;
+    font-family: arvo;
+    margin-left: %;
+}
+#facebook{
+    
+    background-color: #FFFFFF;
+}
+h1{
+    background-color: #FFFFFF;
+    font-size: 6vh;
+    margin-top: -0.5vw;
+}
+/* Estilo do "Adicionar Relatório" */
+.adicionar_relatorio {
+    display: flex;             /* Usa flexbox para o conteúdo ficar na linha */
+    align-items: center;       /* Alinha verticalmente o texto e o ícone */
+    color: #1877F2;            /* Cor do texto */
+    font-size: 1.2rem;         /* Tamanho do texto */
+    margin-top: 2%;
+    padding-right: 8.5%;
+    
+    
+}
+
+/* Estilo do ícone de mais */
+#adicionar_relatorio img {
+    
+    width: 25px;               /* Tamanho do ícone */
+    height: 25px;              /* Tamanho do ícone */
+    cursor: pointer;          /* Altera o cursor para um ponteiro quando passar em cima */
+    margin-left: 8px;          /* Espaço entre o texto e o ícone */
+    
+}
+
+/* Remover a decoração do link */
+.adicionar_relatorio a {
+    display: flex;             /* Flex para alinhar o texto e a imagem */
+    align-items: center;       /* Alinha verticalmente o texto e o ícone */
+    text-decoration: none;     /* Remove o sublinhado do link */
+    color: inherit;            /* Mantém a cor do link igual à cor do texto */
+    gap: 10px;
+}
+
+/* Estilos para o parágrafo dentro do link */
+.adicionar_relatorio p {
+    margin: 0;                 /* Remove a margem padrão do parágrafo */
+    font-weight: bold;         /* Deixa o texto em negrito */
+   
+}
+li{
+    list-style: none;
+}
