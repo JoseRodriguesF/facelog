@@ -1,32 +1,161 @@
+
 html, body {
     margin: 0;
     padding: 0;
-    width: 100vw;
-    height: 100vh;
-    box-sizing: border-box;
+    overflow-x: hidden;
+    width: 100%; 
 }
+
 
 .menu-relatorio { 
-    margin-left: 9vw; 
-    margin-right: auto;
-    margin-top: 2.0vw;   /* Margem superior e inferior proporcional à altura */
-    width: 65vw; /* Largura ocupa 80% da largura da viewport */
-    height: 80vh; /* Altura ocupa 70% da altura da viewport */
+    margin-left: 5vw; 
+    margin-right: 5vw;
+    margin-top: 2.0vw; 
+    width: 65vw;
+    min-height: 60vh; 
+    max-height: none; 
     border: solid #1877F2;
-    border-radius: 20px;
+    border-radius: 2vw;
     font-family: Arial, sans-serif;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.265); /* Sombra com maior contraste */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.265); 
     background-color: white;
+    display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza o conteúdo horizontalmente */
-    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    align-items: left; 
+    justify-content: flex-start; 
+    overflow: auto; 
 }
 
-/* Ajustes para tablets */
+.nome-menu{
+    margin-left: 5vw;
+}
+
+.blue-line {
+    border: none; 
+    height: 0.4vh; 
+    width: 20vw; 
+    background-color: #1877F2; 
+    margin-top: 0.5vh; 
+    margin-bottom: 2vh;
+    margin-left: 0;
+}
+
+.titulo {
+    margin-left: 5vw;
+}
+
+
+#titulo {
+    width: 30vw; 
+    height: 4vh; 
+    border-radius: 2vw;
+    border: solid #1877F2;
+}
+
+.descricao {
+    margin-top: 5vh;
+    margin-left: 5vw;
+}
+
+#descricao {
+    width: 54vw; 
+    height: 40vh; 
+    border-radius: 2vw;
+    border: solid #1877F2;
+    width: calc(100% - 10vw); 
+}
+
+.linha-1-relatorio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.codigo {
+    margin-top: 2.5vw;
+    margin-left: 5vw;
+}
+
+.inicio-incidente{
+    margin-left: 1vw;
+    margin-right: 20vw;
+    margin-top: 2.5vw;
+}
+
+#inicio-incidente{
+    border-radius: 1vw;
+    width: 7vw;
+    height: 2.5vw;
+    border: solid #1877F2;
+    margin-top: 0.7vw;
+}
+
+.linha-2-relatorio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.setor {
+    margin-top: 2.5vw;
+    margin-left: 5vw;
+}
+
+#setor{
+    border-radius: 1vw;
+    width: 14vw;
+    height: 2.5vw;
+    border: solid #1877F2;
+    margin-top: 0.7vw;
+}
+
+.urgencia{
+    margin-left: 1vw;
+    margin-right: 24.5vw;
+    margin-top: 2.5vw;
+}
+
+
+#urgencia{
+    border-radius: 1vw;
+    width: 7vw;
+    height: 2.5vw;
+    border: solid #1877F2;
+    margin-top: 0.7vw;
+}
+.botoes{
+    margin-top: 2vw;
+}
+
+#adicionar {
+    font-size: large;
+    border-radius: 1vw;
+    width: 8vw;
+    height: 3vw;
+    border: solid #1877F2;
+    margin-left: 54vw;
+    margin-bottom: 2.0vw;
+    margin-right: 0.5vw;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.265); 
+}
+
 @media (max-width: 768px) {
     .menu-relatorio {
-        width: 90vw; /* Mais largo em telas menores */
-        height: 60vh; /* Altura reduzida para evitar cortes */
+        width: 90vw;
         margin: 3vh auto;
+        min-height: 50vh; 
+    }
+
+    .blue-line {
+        width: 50vw; 
+    }
+
+    #titulo {
+        width: 80vw; 
+    }
+
+    #descricao {
+        width: 80vw; 
+        height: 20vh; 
     }
 }
