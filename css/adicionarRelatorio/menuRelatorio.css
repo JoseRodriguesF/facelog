@@ -1,0 +1,32 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.menu-relatorio { 
+    margin-left: 9vw; 
+    margin-right: auto;
+    margin-top: 2.0vw;   /* Margem superior e inferior proporcional à altura */
+    width: 65vw; /* Largura ocupa 80% da largura da viewport */
+    height: 80vh; /* Altura ocupa 70% da altura da viewport */
+    border: solid #1877F2;
+    border-radius: 20px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.265); /* Sombra com maior contraste */
+    background-color: white;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+}
+
+/* Ajustes para tablets */
+@media (max-width: 768px) {
+    .menu-relatorio {
+        width: 90vw; /* Mais largo em telas menores */
+        height: 60vh; /* Altura reduzida para evitar cortes */
+        margin: 3vh auto;
+    }
+}
