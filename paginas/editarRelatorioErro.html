@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="/css/global/header.css">
     <link rel="stylesheet" href="/css/global/container.css">
     <link rel="stylesheet" href="/css/global/menu.css">
-    <link rel="stylesheet" href="/css/adicionarRelatorio/menuRelatorio.css">
+    <link rel="stylesheet" href="/css/editarRelatorioErro/editarRelatorioErro.css">
     <link rel="stylesheet" href="/css/global/main.css">
+    <link rel="stylesheet" href="/css/global/footer.css">
 </head>
 <body>
     <header>
@@ -43,13 +44,31 @@
                 </label>
             </div>
             <div class="menu-relatorio">
-               
+                <h2 class="nome-menu">Relatório de erro<hr class="blue-line"></h2>
+                <form>
+                    <div class="div-status">
+                        <h3 class="titulo">Título:<br><br><textarea name="titulo" id="titulo">variavel</textarea></h3>
+                        <h3 class="status">Status:<br><p>Pendentes</p></h3>
+                    </div>
+                    <h3 class="descricao">Descrição do Erro:<br><br><textarea name="" id="descricao">variavel</textarea></h3>
+                    <div class="linha-1-relatorio">
+                        <h3 class="codigo">Código de Identificação:<p id="codigo">variavel</p><h3>
+                        <h3 class="inicio-incidente">Início do Incidente:<br><p type="date" id="inicio-incidente">data</p></h3>
+                    </div>
+                    <div class="linha-2-relatorio">
+                        <h3 class="setor">Setor:<br><p>variavel</p>
+                        </h3>
+                        <h3 class="urgencia">Urgência:<br><p>variavel</p>
+                    </div>
+                    <div class="botoes">
+                        <button id="adicionar-conclusao" type="submit">Concluir</button>
+                    </div>
+                </form>
             </div>
         </div>
     </main>
     <footer>
 
     </footer>
-    
 </body>
 </html>
