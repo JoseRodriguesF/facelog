@@ -59,7 +59,7 @@ html, body {
 
 #descricao {
     width: 54vw; 
-    min-height: 40vh; 
+    min-height: 20vh; 
     max-height: none;
     border-radius: 2vw;
     border: solid #1877F2;
@@ -129,7 +129,6 @@ html, body {
 }
 
 #adicionar {
-
     border-radius: 1vw;
     width: 8vw;
     height: 3vw;

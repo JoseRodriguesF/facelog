@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="/css/global/header.css">
     <link rel="stylesheet" href="/css/global/container.css">
     <link rel="stylesheet" href="/css/global/menu.css">
-    <link rel="stylesheet" href="/css/adicionarRelatorio/menuRelatorio.css">
+    <link rel="stylesheet" href="/css/adicionarConclusao/adicionarConclusao.css">
     <link rel="stylesheet" href="/css/global/main.css">
+    <link rel="stylesheet" href="/css/global/footer.css">
 </head>
 <body>
     <header>
@@ -43,13 +44,40 @@
                 </label>
             </div>
             <div class="menu-relatorio">
-               
+                <h2 class="nome-menu">Relatório de erro<hr class="blue-line"></h2>
+                <form>
+                    <div class="div-status">
+                        <h3 class="titulo">Título:<br><p id="titulo">variavel</p></h3>
+                    </div>
+                    <h3 class="descricao">Descrição do Erro:<br><br><p id="descricao">conteudo da descricao do erro</p></h3>
+                    <br>
+                    <h3 class="descricao-resolucao">Descrição da resolução do erro:<br><br><input type="text" id="resolucao-erro"></h3>
+                    <div class="MTTs">
+                        <h3>(MTTA) Confimação - inicio:<input type="date" id="mtta1"></h3>
+                        <h3>(MTTA) Confimação - fim:<input type="date" id="mtta2"></h3>
+                        <h3>(MTTD) Diagnóstico - inicio:<input type="date" id="mttd1"></h3>
+                        <h3>(MTTD) Diagnóstico - fim:<input type="date" id="mttd2"></h3>
+                    </div>
+                    <br>
+                    <div class="linha-1-relatorio">
+                        <h3 class="codigo">Código de Identificação:<p id="codigo">33</p><h3>
+                        <h3 class="inicio-incidente">Início do Incidente:<br><p type="date" id="inicio-incidente">data</p></h3>
+                        <h3 class="fim-incidente">Fim do Incidente:<br><input type="date" id="fim-incidente"></h3>
+                    </div>
+                    <div class="linha-2-relatorio">
+                        <h3 class="setor">Setor:<br><p>variavel</p>
+                        </h3>
+                        <h3 class="urgencia">Urgência:<br><p>variavel</p>
+                    </div>
+                    <div class="botoes">
+                        <button id="concluir" type="submit">Adicionar conclusão</button>
+                    </div>
+                </form>
             </div>
         </div>
     </main>
     <footer>
 
     </footer>
-    
 </body>
 </html>

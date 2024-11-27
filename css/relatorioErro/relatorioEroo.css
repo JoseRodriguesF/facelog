@@ -52,7 +52,7 @@ html, body {
 
 #descricao {
     width: 54vw; 
-    min-height: 40vh; 
+    min-height: 20vh; 
     max-height: none;
     width: calc(100% - 10vw); 
 }

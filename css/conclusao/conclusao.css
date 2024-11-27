@@ -6,7 +6,6 @@ html, body {
     width: 100%; 
 }
 
-
 .menu-relatorio { 
     margin-left: 5vw; 
     margin-right: 5vw;
@@ -43,14 +42,6 @@ html, body {
 .titulo {
     margin-left: 5vw;
 }
-#titulo {
-    width: 30vw; 
-    height: 4vh; 
-    border-radius: 2vw;
-    border: solid #1877F2;
-}
-
-
 
 .descricao {
     margin-top: 5vh;
@@ -61,25 +52,35 @@ html, body {
     width: 54vw; 
     min-height: 20vh; 
     max-height: none;
+    width: calc(100% - 10vw); 
+}
+
+.descricao-resolucao {
+    margin-left: 5vw;
+}
+
+#resolucao-erro {
+    width: 54vw; 
+    min-height: 20vh; 
+    max-height: none;
     border-radius: 2vw;
     border: solid #1877F2;
-    width: calc(100% - 10vw); 
+    width: calc(100% - 10vw);
 }
 
 .linha-1-relatorio{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
 }
 
 .codigo {
     margin-top: 2.5vw;
     margin-left: 5vw;
+    margin-right: 5vw;
 }
 
 .inicio-incidente{
-    margin-left: 1vw;
-    margin-right: 20vw;
+    margin-left: 0vw;
     margin-top: 2.5vw;
 }
 
@@ -90,10 +91,21 @@ html, body {
     margin-top: 0.7vw;
 }
 
+.fim-incidente {
+    margin-top: 0.7vw;
+    margin-top: 2.5vw;
+    margin-right: 0vw;
+    margin-left: 5vw;
+}
+
+#fim-incidente{
+    border: solid #1877F2;
+    border-radius: 1vw;
+}
+
 .linha-2-relatorio{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
 }
 
 .setor {
@@ -110,11 +122,9 @@ html, body {
 }
 
 .urgencia{
-    margin-left: 1vw;
-    margin-right: 25.5vw;
+    margin-left: 16.5vw;
     margin-top: 2.5vw;
 }
-
 
 #urgencia{
     border-radius: 1vw;
@@ -123,18 +133,19 @@ html, body {
     border: solid #1877F2;
     margin-top: 0.7vw;
 }
+
 .botoes{
     display: flex;
     margin-top: 3vw;
     flex-direction: row;
 }
 
-#adicionar-conclusao {
+#concluir {
     border-radius: 1vw;
-    width: 8vw;
+    width: 12vw;
     height: 3vw;
     border: solid #1877F2;
-    margin-left: 54vw;
+    margin-left: 50vw;
     margin-bottom: 2.0vw;
     margin-right: 0.5vw;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.265); 
@@ -148,7 +159,10 @@ html, body {
 
 .status{
     margin-right: 20vh;
+}
 
+.MTTs {
+    margin-left: 5vw;
 }
 
 
