@@ -154,7 +154,7 @@ html, body {
 
 @media (max-width: 768px) {
     .menu-relatorio {
-        width: 90vw;
+        width: 80vw;
         margin: 3vh auto;
         min-height: 50vh; 
     }
@@ -164,11 +164,19 @@ html, body {
     }
 
     #titulo {
-        width: 80vw; 
+        width: 50vw; 
     }
 
     #descricao {
-        width: 80vw; 
+        width: 70vw; 
         height: 20vh; 
+    }
+    #adicionar-conclusao{
+
+    width: 22vw;
+        height: 6vw;
+    }
+    #resolvidos1{ 
+        border-radius: 0px 0px 20px 20px;
     }
 }

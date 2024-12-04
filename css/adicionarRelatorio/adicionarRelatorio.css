@@ -158,4 +158,57 @@ html, body {
         width: 80vw; 
         height: 20vh; 
     }
+    #inicio-incidente{
+        border-radius: 1vw;
+        width: 15vw;
+        height: 5vw;
+        border: solid #1877F2;
+        margin-top: 0.7vw;
+    }
+    .setor {
+        margin-top: 2.5vw;
+        margin-left: 5vw;
+    }
+    
+    #setor{
+        border-radius: 1vw;
+        width: 14vw;
+        height: 5vw;
+        border: solid #1877F2;
+        margin-top: 0.7vw;
+    }
+    
+    .urgencia{
+        margin-left: 1vw;
+        margin-right: 25.5vw;
+        margin-top: 2.5vw;
+    }
+    
+    
+    #urgencia{
+        border-radius: 1vw;
+        width: 20vw;
+        height: 5vw;
+        border: solid #1877F2;
+        margin-top: 0.7vw;
+    }
+    .botoes{
+        margin-top: 2vw;
+    }
+    
+    #adicionar {
+        border-radius: 1vw;
+        width: 22vw;
+        height: 6vw;
+        border: solid #1877F2;
+        margin-left: 54vw;
+        margin-bottom: 2.0vw;
+        margin-right: 0.5vw;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.265); 
+    }
+    
+    .celular{
+        width: vw;
+    }
+    
 }

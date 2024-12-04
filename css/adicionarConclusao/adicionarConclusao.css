@@ -108,48 +108,6 @@ html, body {
     flex-direction: row;
 }
 
-.setor {
-    margin-top: 2.5vw;
-    margin-left: 5vw;
-}
-
-#setor{
-    border-radius: 1vw;
-    width: 14vw;
-    height: 2.5vw;
-    border: solid #1877F2;
-    margin-top: 0.7vw;
-}
-
-.urgencia{
-    margin-left: 16.5vw;
-    margin-top: 2.5vw;
-}
-
-#urgencia{
-    border-radius: 1vw;
-    width: 7vw;
-    height: 2.5vw;
-    border: solid #1877F2;
-    margin-top: 0.7vw;
-}
-
-.botoes{
-    display: flex;
-    margin-top: 3vw;
-    flex-direction: row;
-}
-
-#concluir {
-    border-radius: 1vw;
-    width: 12vw;
-    height: 3vw;
-    border: solid #1877F2;
-    margin-left: 50vw;
-    margin-bottom: 2.0vw;
-    margin-right: 0.5vw;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.265); 
-}
 
 .div-status{
     display: flex;
@@ -200,12 +158,56 @@ html, body {
         width: 50vw; 
     }
 
-    #titulo {
+    #titulo, #descricao, #resolucao-erro {
         width: 80vw; 
     }
 
-    #descricao {
-        width: 80vw; 
-        height: 20vh; 
+    .linha-1-relatorio, .linha-2-relatorio {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    #inicio-incidente, #fim-incidente, #mtta1, #mtta2, #mttd1, #mttd2 {
+        width: 90%;
+        margin: 1vh 0;
+        font-size: 1rem;
+    }
+
+    .botoes {
+        justify-content: center;
+        margin-top: 3vh;
+        font-size: 1rem;
+    }
+
+    #concluir {
+        width: 70%;
+        height: 6vh;
+        margin: 0 auto;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-relatorio {
+        border-radius: 4vw;
+    }
+
+    .nome-menu {
+        font-size: 1.2em;
+        margin-left: 2vw;
+    }
+
+    .blue-line {
+        width: 70%;
+    }
+
+    #titulo, #descricao, #resolucao-erro {
+        font-size: 1em;
+        padding: 1vw;
+    }
+
+    #concluir {
+        font-size: 1.1em;
+        width: 80%;
     }
 }
