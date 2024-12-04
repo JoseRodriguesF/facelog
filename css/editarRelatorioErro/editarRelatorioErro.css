@@ -94,6 +94,7 @@ html, body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    
 }
 
 .setor {
@@ -140,11 +141,11 @@ html, body {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.265); 
 }
 
-.div-status{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+    .div-status{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
 .status{
     margin-right: 20vh;

@@ -142,16 +142,7 @@ html, body {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.265); 
 }
 
-#fotos {
-    border-radius: 1vw;
-    width: 5vw;
-    height: 3vw;
-    border: solid #1877F2;
-    margin-left: 0vw;
-    margin-bottom: 2.0vw;
-    margin-right: 0.5vw;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.265); 
-}
+
 
 #editar {
     border-radius: 1vw;
@@ -196,4 +187,35 @@ html, body {
         width: 80vw; 
         height: 20vh; 
     }
+    #adicionar-conclusao {
+        border-radius: 1vw;
+        width: 100%;
+        height: 10vw;
+        border: solid #1877F2;
+        margin-left: 0vw;
+        margin-bottom: 2.0vw;
+        margin-right: 0.5vw;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.265); 
+    }
+    #editar {
+        border-radius: 1vw;
+        width: 80%;
+        height: 6vw;
+        border: solid #1877F2;
+        margin-left: 35vw;
+        margin-bottom: 2.0vw;
+        margin-right: 0.5vw;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.265); 
+    }
+    #excluir {
+        border-radius: 1vw;
+        width: 80%;
+        height: 6vw;
+        border: solid #1877F2;
+        margin-left: 0vw;
+        margin-bottom: 2.0vw;
+        margin-right: 0.5vw;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.265); 
+    }
+    
 }

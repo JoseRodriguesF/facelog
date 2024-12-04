@@ -68,6 +68,11 @@ html, body {
     width: calc(100% - 10vw);
 }
 
+.linha-2-relatorio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .linha-1-relatorio{
     display: flex;
     flex-direction: row;
@@ -116,7 +121,7 @@ html, body {
 }
 
 .status{
-    margin-right: 20vh;
+    margin-right: 2vh;
 }
 
 .MTTs {
@@ -144,6 +149,44 @@ html, body {
     margin-left: 3vw;
     border: solid #1877F2;
     border-radius: 1vw;
+}
+.setor {
+    margin-top: 2.5vw;
+    margin-left: 5vw;
+}
+
+#setor{
+    border-radius: 1vw;
+    width: 14vw;
+    height: 2.5vw;
+    border: solid #1877F2;
+    margin-top: 0.7vw;
+}
+
+.urgencia{
+    margin-left: 1vw;
+    margin-right: 25.5vw;
+    margin-top: 2.5vw;
+}
+
+
+#urgencia{
+    border-radius: 1vw;
+    width: 7vw;
+    height: 2.5vw;
+    border: solid #1877F2;
+    margin-top: 0.7vw;
+}
+
+#concluir {
+    border-radius: 1vw;
+    width: 15vw;
+    height: 3vw;
+    border: solid #1877F2;
+    margin-left: 49vw;
+    margin-bottom: 2.0vw;
+    margin-right: 0.5vw;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.265); 
 }
 
 
@@ -208,6 +251,9 @@ html, body {
 
     #concluir {
         font-size: 1.1em;
+        height: 6vh;
         width: 80%;
+        border: solid #1877F2;
+        border-radius: 1vw;
     }
 }
