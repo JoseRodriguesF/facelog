@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/global/header.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/global/container.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/global/menu.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/adicionarConclusao/adicionarConclusao.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/global/main.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/global/footer.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="${pageContext.request.contextPath}/icones/facebook.svg" alt="icone do facebook" id="logo-img">
+            <h1 id="logo-txt">acelog</h1> 
+        </div>
+        <div class="adicionar_relatorio">
+            <a href="index.html">
+                <p>Fechar</p>
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="main-container">
+            <div class="menu-container">
+                <div class="menu-header">RelatÃ³rios</div>
+                <input type="checkbox" id="pendentes">
+                <label for="pendentes" id="pendentes-toggle" class="menu-toggle" id="pendentes1">Pendentes
+                    <img src="${pageContext.request.contextPath}/icones/seta.svg" alt="seta">
+                </label>
+                <div class="menu-items">
+                    <c:forEach var="relatorio" items="${relatorios}">
+                        <div class="menu-item">
+                            <a href="#${relatorio.id}">${relatorio.titulo}</a>
+                        </div>
+                    </c:forEach>
+                </div>
+                <input type="checkbox" id="resolvidos">
+                <label for="resolvidos" class="menu-toggle">Resolvidos
+                    <img src="${pageContext.request.contextPath}/icones/seta.svg" alt="seta">
+                </label>
+            </div>
+            <div class="menu-relatorio">
+                <h2 class="nome-menu">Relatório de erro<hr class="blue-line"></h2>
+                <form>
+                    <div class="div-status">
+                        <h3 class="titulo">Tí­tulo:<br><p id="titulo">variavel</p></h3>
+                    </div>
+                    <h3 class="descricao">Descrição do Erro:<br><br><p id="descricao">conteudo da descricao do erro</p></h3>
+                    <br>
+                    <h3 class="descricao-resolucao">Descrição da resolução do erro:<br><br><input type="text" id="resolucao-erro"></h3>
+                    <div class="MTTs">
+                        <h3>(MTTA) Confimação - inicio:<input type="date" id="mtta1"></h3>
+                        <h3>(MTTA) Confimação - fim:<input type="date" id="mtta2"></h3>
+                        <h3>(MTTD) Diagnóstico - inicio:<input type="date" id="mttd1"></h3>
+                        <h3>(MTTD) Diagnóstico - fim:<input type="date" id="mttd2"></h3>
+                    </div>
+                    <br>
+                    <div class="linha-1-relatorio">
+                        <h3 class="codigo">Código de Identificação:<p id="codigo">33</p><h3>
+                        <h3 class="inicio-incidente">Iní­cio do Incidente:<br><p type="date" id="inicio-incidente">data</p></h3>
+                        <h3 class="fim-incidente">Fim do Incidente:<br><input type="date" id="fim-incidente"></h3>
+                    </div>
+                    <div class="linha-2-relatorio">
+                        <h3 class="setor">Setor:<br><p>variavel</p>
+                        </h3>
+                        <h3 class="urgencia">Urgência:<br><p>variavel</p>
+                    </div>
+                    <div class="botoes">
+                        <button id="concluir" type="submit">Adicionar conclusão</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

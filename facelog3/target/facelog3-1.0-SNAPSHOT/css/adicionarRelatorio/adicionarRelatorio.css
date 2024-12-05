@@ -1,0 +1,214 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%; 
+}
+
+
+.menu-relatorio { 
+    margin-left: 5vw; 
+    margin-right: 5vw;
+    margin-top: 2.0vw; 
+    width: 65vw;
+    min-height: 60vh; 
+    max-height: none; 
+    border: solid #1877F2;
+    border-radius: 2vw;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.265); 
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: left; 
+    justify-content: flex-start; 
+    overflow: auto; 
+}
+
+.nome-menu{
+    margin-left: 5vw;
+}
+
+.blue-line {
+    border: none; 
+    height: 0.4vh; 
+    width: 20vw; 
+    background-color: #1877F2; 
+    margin-top: 0.5vh; 
+    margin-bottom: 2vh;
+    margin-left: 0;
+}
+
+.titulo {
+    margin-left: 5vw;
+}
+
+
+#titulo {
+    width: 30vw; 
+    height: 4vh; 
+    border-radius: 2vw;
+    border: solid #1877F2;
+}
+
+.descricao {
+    margin-top: 5vh;
+    margin-left: 5vw;
+}
+
+#descricao {
+    width: 54vw; 
+    min-height: 20vh; 
+    max-height: none;
+    border-radius: 2vw;
+    border: solid #1877F2;
+    width: calc(100% - 10vw); 
+}
+
+.linha-1-relatorio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.codigo {
+    margin-top: 2.5vw;
+    margin-left: 5vw;
+}
+
+.inicio-incidente{
+    margin-left: 1vw;
+    margin-right: 20vw;
+    margin-top: 2.5vw;
+}
+
+#inicio-incidente{
+    border-radius: 1vw;
+    width: 7vw;
+    height: 2.5vw;
+    border: solid #1877F2;
+    margin-top: 0.7vw;
+}
+
+.linha-2-relatorio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.setor {
+    margin-top: 2.5vw;
+    margin-left: 5vw;
+}
+
+#setor{
+    border-radius: 1vw;
+    width: 14vw;
+    height: 2.5vw;
+    border: solid #1877F2;
+    margin-top: 0.7vw;
+}
+
+.urgencia{
+    margin-left: 1vw;
+    margin-right: 25.5vw;
+    margin-top: 2.5vw;
+}
+
+
+#urgencia{
+    border-radius: 1vw;
+    width: 7vw;
+    height: 2.5vw;
+    border: solid #1877F2;
+    margin-top: 0.7vw;
+}
+.botoes{
+    margin-top: 2vw;
+}
+
+#adicionar {
+    border-radius: 1vw;
+    width: 8vw;
+    height: 3vw;
+    border: solid #1877F2;
+    margin-left: 54vw;
+    margin-bottom: 2.0vw;
+    margin-right: 0.5vw;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.265); 
+}
+
+@media (max-width: 768px) {
+    .menu-relatorio {
+        width: 90vw;
+        margin: 3vh auto;
+        min-height: 50vh; 
+    }
+
+    .blue-line {
+        width: 50vw; 
+    }
+
+    #titulo {
+        width: 80vw; 
+    }
+
+    #descricao {
+        width: 80vw; 
+        height: 20vh; 
+    }
+    #inicio-incidente{
+        border-radius: 1vw;
+        width: 15vw;
+        height: 5vw;
+        border: solid #1877F2;
+        margin-top: 0.7vw;
+    }
+    .setor {
+        margin-top: 2.5vw;
+        margin-left: 5vw;
+    }
+    
+    #setor{
+        border-radius: 1vw;
+        width: 14vw;
+        height: 5vw;
+        border: solid #1877F2;
+        margin-top: 0.7vw;
+    }
+    
+    .urgencia{
+        margin-left: 1vw;
+        margin-right: 25.5vw;
+        margin-top: 2.5vw;
+    }
+    
+    
+    #urgencia{
+        border-radius: 1vw;
+        width: 20vw;
+        height: 5vw;
+        border: solid #1877F2;
+        margin-top: 0.7vw;
+    }
+    .botoes{
+        margin-top: 2vw;
+    }
+    
+    #adicionar {
+        border-radius: 1vw;
+        width: 22vw;
+        height: 6vw;
+        border: solid #1877F2;
+        margin-left: 54vw;
+        margin-bottom: 2.0vw;
+        margin-right: 0.5vw;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.265); 
+    }
+    
+    .celular{
+        width: vw;
+    }
+    
+}
