@@ -1,0 +1,11 @@
+.main-container {
+    display: flex; 
+    gap: 0vw; 
+    padding: 0vw; 
+
+}
+
+.menu-container,
+.menu-relatorio {
+    flex-shrink: 0;  
+}

@@ -1,0 +1,15 @@
+
+footer {
+    display: flex;
+    align-items: center; 
+    top: 0; 
+    left: 0; 
+    width: auto;
+    height: 5vh; 
+    background-color: #FFFFFF;
+    z-index: 1000; 
+    padding: 10px 20px;
+    position: relative;  
+    z-index: 10;        
+    margin-top: 1vw; 
+}
